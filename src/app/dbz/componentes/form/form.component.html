@@ -1,0 +1,13 @@
+<h4>Agregar personajes</h4>
+<!--ngsubmit es paraque envie el formulario cuando se haga el submit y no precisamente cuando se de click al boton-->
+<form class="row" (ngSubmit)="emitCharacter()">
+
+  <input type="text" [(ngModel)]="character.name" name="name" class="form-control mb-2" placeholder="Nombre del personaje">
+
+  <input type="number" [(ngModel)]="character.power" name="power" class="form-control mb-2" placeholder="Poder">
+  <button type="submit" class="btn btn-primary">
+    Agregar
+  </button>
+
+  <!--<pre>{{ character | json }}</pre>-->
+</form>
